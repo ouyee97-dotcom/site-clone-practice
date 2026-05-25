@@ -16,6 +16,7 @@
 - For implementation tasks, first provide a short plan and wait for user confirmation before editing files.
 - For analysis tasks, do not modify files.
 - If a screenshot or interaction detail is unclear, ask first instead of guessing.
+- If any requirement, layout detail, interaction behavior, naming choice, or expected result is unclear, ask the user and pause instead of making a hard guess.
 - Let the user review each stable phase before moving to the next one.
 - After editing, summarize:
   1. files changed
