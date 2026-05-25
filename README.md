@@ -1,16 +1,36 @@
-# React + Vite
+# Site Clone Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个用于前端复刻练习的 React + Vite 项目骨架。
 
-Currently, two official plugins are available:
+## 目标
+- 根据截图、页面观察和交互描述，逐步实现相似的前端页面。
+- 重点练习布局、视觉层级、组件拆分、交互状态和响应式适配。
+- 不直接复制目标网站的商标、商业图片和受版权保护的文案。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 工作方式
+- 每次只做一个小阶段，例如 Header、Hero、卡片区、响应式修正。
+- 每个阶段开始前先做计划，再确认后修改文件。
+- 如果截图细节不明确，先记录疑点并确认，不凭空猜测。
+- 每完成一个稳定阶段后，再由你决定是否 commit 和 push。
 
-## React Compiler
+## 目录说明
+- `AGENTS.md`: 给 Codex 的长期项目规则
+- `prompts/`: 常用 prompt 模板
+- `references/screenshots/`: 目标网站截图
+- `references/notes/`: 页面细节、尺寸、交互、响应式观察记录
+- `src/components/`: 可复用组件
+- `src/pages/`: 页面级组件
+- `src/styles/`: 全局样式、设计变量、布局样式
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 常用命令
+```bash
+npm run dev
+npm run build
+npm run lint
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 推荐流程
+1. 把目标截图放进 `references/screenshots/`
+2. 把观察到的细节写进 `references/notes/`
+3. 使用 `prompts/01-project-plan.md` 或 `prompts/02-visual-analysis.md` 开始分析
+4. 确认当前阶段目标后，再进入实现
